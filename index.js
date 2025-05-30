@@ -14,3 +14,10 @@ document.addEventListener('click', function (event) {
         menu.classList.add('hidden');
     }
 });
+// Close mobile menu when clicking on a link    
+document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', function () {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.add('hidden');
+    });
+});
