@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🌏CyBar Porfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-white text-black text-[16px] shadow z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                
+                <div class="text-2xl font-bold text-black">
+                    CyBar🌏
+                </div>
+
+                
+                <div class="hidden md:flex items-center space-x-6 text-[16px] text-black">
+                    <a href="#home" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 pb-1">Home</a>
+                    <a href="#about" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 pb-1">About</a>
+                    <a href="#skills" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 pb-1">Skills</a>
+                    <a href="#projects"
+                        class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 pb-1">Projects</a>
+                    <a href="#contact"
+                        class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 pb-1">Contacts</a>
+
+                    <div class="relative group">
+                        <a href="./RESUME.odt" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+                            Resume
+                        </a>
+                        <div
+                            class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 px-3 py-1 text-sm text-white bg-blue-300 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                            Click to download resume
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-black focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 text-[16px] text-black">
+            <a href="#home" class="block hover:text-blue-600">Home</a>
+            <a href="#about" class="block hover:text-blue-600">About</a>
+            <a href="#skills" class="block hover:text-blue-600">Skills</a>
+            <a href="#projects" class="block hover:text-blue-600">Projects</a>
+            <a href="#contact" class="block hover:text-blue-600">Contacts</a>
+            <a href="./RESUME.odt" target="_blank"
+                class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+                Resume
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section-->
+    <header class="bg-blue-50 min-h-screen flex items-center" id="home">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+
+
+            <div class="md:w-1/2 text-black pl-4 md:pl-8">
+                <p class="text-lg text-blue-600">Hello, I'm</p>
+                <h1 class="text-4xl font-bold mt-2">Cyrus Barrow</h1>
+                <h2 class="text-2xl font-semibold mt-1">Frontend Developer</h2>
+                <p class="mt-4 text-[16px] leading-relaxed">
+                    I build responsive, user-friendly web applications with modern technologies. Passionate about
+                    creating elegant solutions to complex problems.
+                </p>
+
+
+                <div class="mt-6 flex space-x-4">
+                    <a href="#projects"
+                        class="bg-blue-600 text-white px-6 py-2 rounded border border-blue-600 hover:bg-white hover:text-blue-600 transition">
+                        View My Work
+                    </a>
+                    <a href="#contact"
+                        class="bg-white text-black px-6 py-2 rounded border border-black hover:text-blue-600 hover:border-blue-600 transition">
+                        Contact Me
+                    </a>
+                </div>
+
+               
+                <div class="mt-6 flex space-x-4">
+                    <a href="#" class="shake-hover transition-colors hover:text-blue-600 relative group">
+                        <img src="./images/twitter.svg" alt="Twitter" class="w-6 h-6">
+                        <div
+                            class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 px-3 py-1 text-sm text-white bg-blue-300 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                            Twitter
+                        </div>
+                    </a>
+                    <a href="#" class="shake-hover transition-colors hover:text-blue-600 relative group">
+                        <img src="./images/linkedin.svg" alt="LinkedIn" class="w-6 h-6">
+                        <div
+                            class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 px-3 py-1 text-sm text-white bg-blue-300 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                            Linkedin
+                        </div>
+                    </a>
+                    <a href="#" class="shake-hover transition-colors hover:text-blue-600 relative group">
+                        <img src="./images/giticon.svg" alt="GitHub" class="w-6 h-6">
+                        <div
+                            class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 px-3 py-1 text-sm text-white bg-blue-300 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                            Github
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="mt-10 md:mt-0 md:w-1/2 flex justify-center">
+                <img src="./images/mypicture.png" alt="Profile Picture"
+                    class="w-64 h-64 rounded-full border-2 border-blue-500 shadow-lg float-animation object-cover" />
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+
+
+            <div class="flex flex-col items-center mb-10">
+                <h2 class="text-3xl font-bold text-black mb-2">About Me</h2>
+                <div class="w-16 h-1 bg-blue-600"></div>
+            </div>
+
+            
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-10">
+
+                
+                <div class="w-full md:w-1/2 flex justify-center md:items-stretch">
+                    <img src="./images/pic1.jpeg" alt="About Me"
+                        class="w-full h-full max-h-[400px] object-cover rounded-lg shadow-md" />
+                </div>
+
+               
+                <div class="w-full md:w-1/2 text-black space-y-6">
+
+                   
+                    <h3 class="text-xl font-semibold lowercase">Who am I?</h3>
+
+                   
+                    <p class="text-[16px] leading-relaxed">
+                        I'm a frontend developer with a strong passion for building responsive and user-friendly web
+                        applications. With a solid grasp of HTML, CSS, JavaScript, and modern frameworks like React, I
+                        focus on creating seamless user experiences.
+                    </p>
+                    <p class="text-[16px] leading-relaxed">
+                        Over the past year, I've worked on various freelance and personal projects, collaborating with
+                        designers and backend developers to turn ideas into functional, performant websites.
+                    </p>
+
+                    
+                    <div class="flex flex-wrap gap-20 mt-6">
+                        
+                        <div class="flex items-center space-x-3">
+                            <img src="./images/exp.svg" alt="Experience"
+                                class="w-6 h-6 transition-transform duration-300 hover:scale-110" />
+                            <div>
+                                <p class="text-sm font-medium">Experience</p>
+                                <p class="text-sm text-gray-600">1+ years</p>
+                            </div>
+                        </div>
+
+                        
+                        <div class="flex items-center space-x-3">
+                            <img src="./images/freeicon.svg" alt="Freelance"
+                                class="w-6 h-6 transition-transform duration-300 hover:scale-110" />
+                            <div>
+                                <p class="text-sm font-medium">Freelance</p>
+                                <p class="text-sm text-gray-600">Available</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="pt-4">
+                        <button id="chat-button"
+                            class="flex items-center space-x-2 bg-blue-600 text-white px-6 py-2 rounded border border-blue-600 hover:bg-white hover:text-blue-600 transition">
+                            <span >Let's Chat</span>
+                            <img src="./images/chaticon.svg" alt="Chat" class="w-5 h-5 filter brightness-0 invert" />
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-blue-50 py-16">
+        <div  class="max-w-7xl mx-auto px-4">
+           
+            <div class="text-center mb-12 flex flex-col">
+                <h2 class="text-3xl font-bold text-black mb-2">
+                    Skills and Technologies
+                    <div class="w-28 h-1 bg-blue-600 mx-auto mt-2 "></div>
+                </h2>
+                <p class="mt-4 text-gray-600">I work with a variety of technologies to create performant and
+                    user-friendly applications.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10">
+               
+                <div class="space-y-6">
+                    <div>
+                        <p class="text-black font-semibold mb-1 ">HTML5</p>
+                        <div class="w-full bg-gray-200 h-3 rounded">
+                            <div class="bg-blue-500 h-3 rounded w-[90%] transition-all duration-500"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="text-black font-semibold mb-1">CSS3</p>
+                        <div class="w-full bg-gray-200 h-3 rounded">
+                            <div class="bg-blue-500 h-3 rounded w-[85%] transition-all duration-500"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="text-black font-semibold mb-1">Canva</p>
+                        <div class="w-full bg-gray-200 h-3 rounded">
+                            <div class="bg-blue-500 h-3 rounded w-[80%] transition-all duration-500"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="text-black font-semibold mb-1">Tailwind CSS</p>
+                        <div class="w-full bg-gray-200 h-3 rounded">
+                            <div class="bg-blue-500 h-3 rounded w-[75%] transition-all duration-500"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="text-black font-semibold mb-1">Javascript</p>
+                        <div class="w-full bg-gray-200 h-3 rounded">
+                            <div class="bg-blue-500 h-3 rounded w-[70%] transition-all duration-500"></div>
+                        </div>
+                    </div>
+                </div>
+
+               
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div
+                        class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center hover:shadow-xl transition-transform transform hover:scale-105">
+                        <img src="./images/git.svg" alt="Git" class="w-12 h-12 mb-3" />
+                        <p class="text-black font-semibold">Git</p>
+                    </div>
+
+                    <div
+                        class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center hover:shadow-xl transition-transform transform hover:scale-105">
+                        <img src="./images/vscode.jpg" alt="VS Code" class="w-12 h-12 mb-3" />
+                        <p class="text-black font-semibold">VS Code</p>
+                    </div>
+
+                    <div
+                        class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center hover:shadow-xl transition-transform transform hover:scale-105">
+                        <img src="./images/react.svg" alt="React" class="w-12 h-12 mb-3 animate-spin-slow" />
+                        <p class="text-black font-semibold">React</p>
+                    </div>
+
+                    <div
+                        class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center hover:shadow-xl transition-transform transform hover:scale-105">
+                        <img src="./images/giticon.svg" alt="Github" class="w-12 h-12 mb-3 animate-spin-slow" />
+                        <p class="text-black font-semibold">GitHub</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!--Projects Section-->
+    <section id="projects" class="py-16 bg-white">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-black mb-2 relative inline-block">
+                Projects
+                <div class="w-16 h-1 bg-blue-600 mt-1 mx-auto"></div>
+            </h2>
+            <p class="mt-4 text-gray-600">
+                Some of the projects I've built using modern web technologies.
+            </p>
+        </div>
+
+
+        <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-8 px-4">
+
+            <div
+                class="bg-blue-50 rounded-lg shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-2 hover:shadow-xl">
+                <img src="./images/responsive.jpg" alt="Project 1" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-black">Responsive Portfolio</h3>
+                    <p class="text-gray-600 mt-2">
+                        A modern and fully responsive portfolio website built using HTML, Tailwind CSS, and JavaScript.
+                    </p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" target="_blank" class="text-blue-600 hover:underline">Live Demo</a>
+                        <a href="#" target="_blank" class="text-blue-600 hover:underline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div
+                class="bg-blue-50 rounded-lg shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-2 hover:shadow-xl">
+                <img src="./images/ecommerce.jpg" alt="Project 2" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-black">E-commerce Website</h3>
+                    <p class="text-gray-600 mt-2">
+                        A full-featured E-commerce platform built with JavaScript and Tailwind CSS.
+                    </p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="https://borrow-three.vercel.app/" target="_blank" class="text-blue-600 hover:underline">Live Demo</a>
+                        <a href="https://borrow-three.vercel.app/" target="_blank" class="text-blue-600 hover:underline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="bg-blue-50 rounded-lg shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-2 hover:shadow-xl">
+                <img src="./images/task.png" alt="Project 2" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-black">To-do Platform</h3>
+                    <p class="text-gray-600 mt-2">
+                        A simple to-do platform with local storage and filter features built with Html and Tailwind CSS.
+                    </p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="https://my-to-do-website.vercel.app/" target="_blank" class="text-blue-600 hover:underline">Live Demo</a>
+                        <a href="https://my-to-do-website.vercel.app/" target="_blank" class="text-blue-600 hover:underline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-blue-50">
+
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-black mb-2 relative inline-block">
+                Contact Me
+                <div class="w-16 h-1 bg-blue-600 mt-1 mx-auto"></div>
+            </h2>
+        </div>
+
+
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
+
+            <div class="bg-white p-6 rounded-lg shadow-lg animate-fade-in">
+                <h3 class="text-lg font-semibold text-black mb-6">Contact Information</h3>
+                <div class="space-y-6 text-gray-700">
+                    <div>
+                        <div class="flex items-center space-x-3 mb-1">
+                            <img src="./images/email.svg" alt="Email Icon" class="w-5 h-5">
+                            <p class="text-base font-semibold">Email</p>
+                        </div>
+                        <p class="text-base ml-8">cyrus.barrow07@gmail.com</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center space-x-3 mb-1">
+                            <img src="./images/location.svg" alt="Location Icon" class="w-5 h-5">
+                            <p class="text-base font-semibold">Location</p>
+                        </div>
+                        <p class="text-base ml-8">America Town - Kasoa, Ghana</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center space-x-3 mb-1">
+                            <img src="./images/callme.svg" alt="Phone Icon" class="w-5 h-5">
+                            <p class="text-base font-semibold">Phone</p>
+                        </div>
+                        <p class="text-base ml-8">+233 541 439 049</p>
+                    </div>
+                </div>
+
+
+                <div class="mt-10">
+                    <h3 class="text-lg font-semibold text-black mb-4">Follow Me</h3>
+                    <div class="flex space-x-4 text-2xl">
+                        <a href="https://x.com/home" class=" relative group text-gray-600 hover:text-blue-600 transform hover:scale-110 transition" target="_blank"><img
+                                src="./images/twitter.svg" alt="Twitter" srcset=""  class="w-6 h-6">
+
+                            <div
+                                class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 px-3 py-1 text-sm text-white bg-blue-300 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                               Twitter
+                            </div>
+                        </a>
+                        <a href="#" class=" relative group text-gray-600 hover:text-blue-600 transform hover:scale-110 transition"><img
+                                src="./images/ig.svg" alt="Instagram"  class="w-6 h-6">
+
+                            <div
+                                class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 px-3 py-1 text-sm text-white bg-blue-300 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                               Instagram
+                            </div>
+                        </a>
+                        <a href="#" class=" relative group text-gray-600 hover:text-blue-600 transform hover:scale-110 transition"><img
+                                src="./images/giticon.svg" alt="GitHub" class="w-6 h-6">
+
+                            <div
+                                class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 px-3 py-1 text-sm text-white bg-blue-300 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                                Github
+                            </div>
+                        </a>
+                        <a href="#" class=" relative group text-gray-600 hover:text-pink-500 transform hover:scale-110 transition"><img
+                                src="./images/linkedin.svg" alt="Linkedin"  class="w-6 h-6">
+
+                            <div
+                                class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 px-3 py-1 text-sm text-white bg-blue-300 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                               LinkedIn
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bg-white p-6 rounded-lg shadow-lg animate-fade-in">
+                <h3 class="text-lg font-semibold text-black mb-4">Send Me a Message</h3>
+                <form class="space-y-4">
+                    <input type="text" placeholder="Your Name"
+                        class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                    <input type="email" placeholder="Your Email"
+                        class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                    <input type="text" placeholder="Subject"
+                        class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                    <textarea rows="4" placeholder="Message"
+                        class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    <button type="submit"
+                        class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition flex items-center space-x-2">
+                       <img src="./images/sendme.svg" alt="" class="w-6 h-6">
+                        <span>Send Message</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div
+            class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div class="text-center md:text-left">
+                <p class="text-sm">&copy; 2025 CyBar. All rights reserved.</p>
+            </div>
+            <div class="flex space-x-6 text-lg">
+                <a href="#" class="hover:text-blue-500 transition">Privacy Policy</a>
+                <a href="#" class="hover:text-blue-500 transition">Terms of Service</a>
+                <a href="#contact" class="hover:text-blue-500 transition" >Contact</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
