@@ -1,471 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>🌏CyBar Porfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./index.js"></script>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🌏Cyrus Barrow</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./index.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  
 </head>
+<body class="dark bg-bg text-text font-mono relative overflow-x-hidden">
+  <!-- Mobile Menu Toggle Button -->
+  <button id="menuToggle" class="toggle-btn fixed top-4 left-4 z-50 bg-accent text-white p-2 rounded-md lg:hidden">
+    <i class="fas fa-bars"></i>
+  </button>
 
-<body class="bg-gray-100">
+  <!-- Sidebar -->
+  <aside id="sidebar" class="fixed top-0 left-0 h-full w-72 bg-surface p-8 flex flex-col justify-between shadow-lg z-40">
+    <div>
+      <!-- Profile Picture in Sidebar -->
+      <div class="mb-5">
+        <img src="./images/Untitled design.png" alt="Cyrus Barrow" class="profile-pic hover-scale">
+      </div>
+      <h1 class="text-2xl font-bold text-accent mb-4 text-center">Cyrus Barrow</h1>
+      <nav class="flex flex-col gap-4 text-base">
+        <a href="#home" class="hover:text-accent transition underline-animation text-sm">_hello</a>
+        <a href="#about" class="hover:text-accent transition underline-animation text-sm">_about</a>
+        <a href="#skills" class="hover:text-accent transition underline-animation text-sm">_skills</a>
+        <a href="#projects" class="hover:text-accent transition underline-animation text-sm">_projects</a>
+        <a href="#contact" class="hover:text-accent transition underline-animation text-sm">_contact</a>
+        <a href="./resume/Cyrus_Barrow_CV.pdf" target="blank" download class="hover:text-accent transition underline-animation text-sm">_resume</a>
+      </nav>
+    </div>
+    <div class="flex gap-5 justify-center mt-4">
+      <a href="https://www.linkedin.com/feed/" class="text-muted hover:text-accent transition social-icon" title="LinkedIn">
+        <i class="fab fa-linkedin-in text-xl"></i>
+      </a>
+      <a href="https://github.com/King-Cyrus00" class="text-muted hover:text-accent transition social-icon" title="GitHub">
+        <i class="fab fa-github text-xl"></i>
+      </a>
+      <a href="https://x.com/home" class="text-muted hover:text-accent transition social-icon" title="Twitter">
+        <i class="fab fa-twitter text-xl"></i>
+      </a>
+    </div>
+  </aside>
 
-    <!-- Navbar -->
-    <nav class="fixed top-0 left-0 w-full bg-white text-black text-[16px] shadow z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                
-                <div class="text-2xl font-bold text-black">
-                    CyBar🌏
-                </div>
+  <!-- Main Content -->
+  <main class="lg:ml-72 px-6 lg:px-12 py-1 space-y-20">
+     <!-- Hero -->
+    <section id="home" class="min-h-screen flex flex-col justify-center gap-4 mt-10">
+      <p class="text-accent text-lg">Hi, my name is</p>
+      <h1 class="text-5xl font-bold text-text name-animation">Cyrus Barrow</h1>
+      <h2 class="text-3xl text-muted">I build exceptional digital experiences.</h2>
+      <p class="max-w-2xl text-muted mt-4 leading-relaxed">
+        I'm a frontend developer with a passion for creating fast, accessible, and user-focused applications. I specialize in turning ideas into elegant, high-performing interfaces — blending clean code with thoughtful design. Currently building impactful solutions at <span class="text-accent font-medium">Mest</span>.
+      </p>
+      <div class="flex gap-4 mt-8">
+        <a href="#projects" class="inline-block bg-accent text-white px-8 py-4 rounded-lg hover:bg-accent-dark transition font-medium btn-primary">
+          View Projects <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+        <a href="#contact" class="inline-block bg-secondary text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition font-medium btn-secondary">
+          Contact Me <i class="fas fa-envelope ml-2"></i>
+        </a>
+      </div>
+    </section>
 
-                
-                <div class="hidden md:flex items-center space-x-6 text-[16px] text-black">
-                    <a href="#home" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 pb-1">Home</a>
-                    <a href="#about" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 pb-1">About</a>
-                    <a href="#skills" class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 pb-1">Skills</a>
-                    <a href="#projects"
-                        class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 pb-1">Projects</a>
-                    <a href="#contact"
-                        class="hover:text-blue-600 hover:border-b-2 hover:border-blue-600 pb-1">Contacts</a>
+    <!-- About -->
+    <section id="about">
+      <h2 class="text-3xl font-bold text-accent mb-8 underline-animation">_about-me</h2>
+      <div class="text-muted leading-relaxed space-y-6">
+        <p>
+          I enjoy building websites that are both visually appealing and user-friendly. With skills in design and frontend development, I bring together clean layouts, responsive design, and smooth functionality to create great user experiences.
+        </p>
+        <p>
+         Over the past few months at MEST, I've been building real-world web projects including an eCommerce site and a book library app. These experiences have helped me improve my frontend development skills and learn how to create responsive, user-friendly, and visually appealing websites.
+        </p>
+        <p class="text-text">Here are some technologies I've been working with recently:</p>
+        <ul class="grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-2 list-disc pl-5 text-text">
+          <li class="hover:text-accent transition">React.js</li>
+          <li class="hover:text-accent transition">JavaScript</li>
+          <li class="hover:text-accent transition">Tailwind CSS</li>
+          <li class="hover:text-accent transition">Vercel</li>
+          <li class="hover:text-accent transition">Github</li>
+          <li class="hover:text-accent transition">Figma</li>
+        </ul>
+      </div>
+    </section>
 
-                    <div class="relative group">
-                        <a href="./RESUME.odt" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
-                            Resume
-                        </a>
-                        <div
-                            class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 px-3 py-1 text-sm text-white bg-blue-300 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
-                            Click to download resume
-                        </div>
-                    </div>
-                </div>
-
-                
-                <div class="md:hidden">
-                    <button id="menu-btn" class="text-black focus:outline-none">
-                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
+    <!-- Skills -->
+    <section id="skills">
+      <h2 class="text-3xl font-bold text-accent mb-8 underline-animation">_skills</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="skill-card bg-surface p-5 rounded-lg border border-slate-700 hover:border-accent transition flex items-center gap-4">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-8 h-8"/>
+          <span>React</span>
         </div>
+        <div class="skill-card bg-surface p-5 rounded-lg border border-slate-700 hover:border-accent transition flex items-center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-8 h-8"/>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-card bg-surface p-5 rounded-lg border border-slate-700 hover:border-accent transition flex items-center gap-4">
+          <img src="./images/html5.png" alt="Html5" class="w-8 h-8"/>
+          <span>HTML5</span>
+        </div>
+        <div class="skill-card bg-surface p-5 rounded-lg border border-slate-700 hover:border-accent transition flex items-center gap-4">
+          <img src="./images/tailwind.png" alt="Tailwind CSS" class="w-8 h-8"/>
+          <span>Tailwind CSS</span>
+        </div>
+        <div class="skill-card bg-surface p-5 rounded-lg border border-slate-700 hover:border-accent transition flex items-center gap-4">
+          <img src="./images/css3.png" alt="CSS3" class="w-8 h-8"/>
+          <span>CSS3</span>
+        </div>
+       
+        <div class="skill-card bg-surface p-5 rounded-lg border border-slate-700 hover:border-accent transition flex items-center gap-4">
+          <img src="./images/github.png" alt="GraphQL" class="w-8 h-8"/>
+          <span>GitHub</span>
+        </div>
+        <div class="skill-card bg-surface p-5 rounded-lg border border-slate-700 hover:border-accent transition flex items-center gap-4">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-8 h-8"/>
+          <span>Git</span>
+        </div>
+        <div class="skill-card bg-surface p-5 rounded-lg border border-slate-700 hover:border-accent transition flex items-center gap-4">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="w-8 h-8"/>
+          <span>Figma</span>
+        </div>
+        <div class="skill-card bg-surface p-5 rounded-lg border border-slate-700 hover:border-accent transition flex items-center gap-4">
+          <img src="./images/netlify.png" alt="Netlify" class="w-8 h-8"/>
+          <span>Netlify</span>
+        </div>
+        <div class="skill-card bg-surface p-5 rounded-lg border border-slate-700 hover:border-accent transition flex items-center gap-4">
+          <img src="./images/giticon.svg" alt="" class="w-8 h-8"/>
+          <span>Vercel</span>
+      </div>
+    </section>
 
+    <!-- Projects -->
+    <section id="projects">
+      <h2 class="text-3xl font-bold text-accent mb-8 underline-animation">_projects</h2>
+      <div class="space-y-8">
+        <div class="project-card bg-surface p-8 rounded-lg border border-slate-700">
+          <div class="flex flex-col md:flex-row gap-8">
+            <div class="md:w-1/3">
+              <div class="bg-slate-800 rounded-lg h-48 flex items-center justify-center text-slate-500">
+                <img src="./images/p1.png" alt="E-Commerce Platform" srcset="">
+              </div>
+            </div>
+            <div class="md:w-2/3">
+              <h3 class="text-2xl text-accent font-bold mb-3">E-Commerce Platform</h3>
+              <p class="text-muted mb-4">
+                A full-featured online store with product catalog, search functionality, and secure login or registration. Built with React.js, JavaScript, and Tailwind CSSs.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-slate-800 text-accent rounded-full text-xs tag">React.js</span>
+                <span class="px-3 py-1 bg-slate-800 text-accent rounded-full text-xs tag">JavaScript</span>
+                <span class="px-3 py-1 bg-slate-800 text-accent rounded-full text-xs tag">Tailwind CSS</span>
+              </div>
+              <div class="mt-4">
+                <a href="https://bambi-online.netlify.app/" target="blank" class="text-accent hover:text-accent-dark transition underline-animation">View Project →</a>
+              </div>
+            </div>
+          </div>
+        </div>
         
-        <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 text-[16px] text-black">
-            <a href="#home" class="block hover:text-blue-600">Home</a>
-            <a href="#about" class="block hover:text-blue-600">About</a>
-            <a href="#skills" class="block hover:text-blue-600">Skills</a>
-            <a href="#projects" class="block hover:text-blue-600">Projects</a>
-            <a href="#contact" class="block hover:text-blue-600">Contacts</a>
-            <a href="./RESUME.odt" target="_blank"
-                class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
-                Resume
-            </a>
+        <div class="project-card bg-surface p-8 rounded-lg border border-slate-700">
+          <div class="flex flex-col md:flex-row gap-8">
+            <div class="md:w-1/3">
+              <div class="bg-slate-800 rounded-lg h-48 flex items-center justify-center text-slate-500">
+               <img src="./images/Screenshot 2025-07-01 121626.png" alt="Book Library App" srcset="">
+              </div>
+            </div>
+            <div class="md:w-2/3">
+              <h3 class="text-2xl text-accent font-bold mb-3">Book Library App</h3>
+              <p class="text-muted mb-4">
+               A responsive web application for browsing, adding, and managing books. Users can view book details, search titles, and organize their collection. Built using React,JavaScript and styled with Tailwind CSS.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-slate-800 text-accent rounded-full text-xs tag">React</span>
+                <span class="px-3 py-1 bg-slate-800 text-accent rounded-full text-xs tag">JavaScript</span>
+                <span class="px-3 py-1 bg-slate-800 text-accent rounded-full text-xs tag">Tailwind CSS</span>
+              </div>
+              <div class="mt-4">
+                <a href="https://deluxe-hummingbird-3b37f3.netlify.app/" target="blank" class="text-accent hover:text-accent-dark transition underline-animation">View Project →</a>
+              </div>
+            </div>
+          </div>
         </div>
-    </nav>
 
-    <!-- Hero Section-->
-    <header class="bg-blue-50 min-h-screen flex items-center" id="home">
-        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
-
-
-            <div class="md:w-1/2 text-black pl-4 md:pl-8">
-                <p class="text-lg text-blue-600">Hello, I'm</p>
-                <h1 class="text-4xl font-bold mt-2">Cyrus Barrow</h1>
-                <h2 class="text-2xl font-semibold mt-1">Frontend Developer</h2>
-                <p class="mt-4 text-[16px] leading-relaxed">
-                    I build responsive, user-friendly web applications with modern technologies. Passionate about
-                    creating elegant solutions to complex problems.
-                </p>
-
-
-                <div class="mt-6 flex space-x-4">
-                    <a href="#projects"
-                        class="bg-blue-600 text-white px-6 py-2 rounded border border-blue-600 hover:bg-white hover:text-blue-600 transition">
-                        View My Work
-                    </a>
-                    <a href="#contact"
-                        class="bg-white text-black px-6 py-2 rounded border border-black hover:text-blue-600 hover:border-blue-600 transition">
-                        Contact Me
-                    </a>
-                </div>
-
-               
-                <div class="mt-6 flex space-x-4">
-                    <a href="#" class="shake-hover transition-colors hover:text-blue-600 relative group">
-                        <img src="./images/twitter.svg" alt="Twitter" class="w-6 h-6">
-                        <div
-                            class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 px-3 py-1 text-sm text-white bg-blue-300 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
-                            Twitter
-                        </div>
-                    </a>
-                    <a href="#" class="shake-hover transition-colors hover:text-blue-600 relative group">
-                        <img src="./images/linkedin.svg" alt="LinkedIn" class="w-6 h-6">
-                        <div
-                            class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 px-3 py-1 text-sm text-white bg-blue-300 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
-                            Linkedin
-                        </div>
-                    </a>
-                    <a href="#" class="shake-hover transition-colors hover:text-blue-600 relative group">
-                        <img src="./images/giticon.svg" alt="GitHub" class="w-6 h-6">
-                        <div
-                            class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 px-3 py-1 text-sm text-white bg-blue-300 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
-                            Github
-                        </div>
-                    </a>
-                </div>
+         <div class="project-card bg-surface p-8 rounded-lg border border-slate-700">
+          <div class="flex flex-col md:flex-row gap-8">
+            <div class="md:w-1/3">
+              <div class="bg-slate-800 rounded-lg h-48 flex items-center justify-center text-slate-500">
+                <img src="./images/to-do.png" alt="To-Do List App" sizes="" srcset="">
+              </div>
             </div>
-
-
-            <div class="mt-10 md:mt-0 md:w-1/2 flex justify-center">
-                <img src="./images/mypicture.png" alt="Profile Picture"
-                    class="w-64 h-64 rounded-full border-2 border-blue-500 shadow-lg float-animation object-cover" />
+            <div class="md:w-2/3">
+              <h3 class="text-2xl text-accent font-bold mb-3">To-Do List App</h3>
+              <p class="text-muted mb-4">
+               A responsive web application for managing tasks and to-do lists. Users can add, edit, and delete tasks, as well as mark them as complete. Built using HTML5, JavaScript, and styled with Tailwind CSS.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-slate-800 text-accent rounded-full text-xs tag">HTML5</span>
+                <span class="px-3 py-1 bg-slate-800 text-accent rounded-full text-xs tag">JavaScript</span>
+                <span class="px-3 py-1 bg-slate-800 text-accent rounded-full text-xs tag">Tailwind CSS</span>
+              </div>
+              <div class="mt-4">
+                <a href="http://127.0.0.1:5500/index.html" target="blank" class="text-accent hover:text-accent-dark transition underline-animation">View Project →</a>
+              </div>
             </div>
+          </div>
         </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="bg-white py-20">
-        <div class="max-w-7xl mx-auto px-4 md:px-8">
-
-
-            <div class="flex flex-col items-center mb-10">
-                <h2 class="text-3xl font-bold text-black mb-2">About Me</h2>
-                <div class="w-16 h-1 bg-blue-600"></div>
-            </div>
-
-            
-            <div class="flex flex-col md:flex-row items-center md:items-start gap-10">
-
-                
-                <div class="w-full md:w-1/2 flex justify-center md:items-stretch">
-                    <img src="./images/pic1.jpeg" alt="About Me"
-                        class="w-full h-full max-h-[400px] object-cover rounded-lg shadow-md" />
-                </div>
-
-               
-                <div class="w-full md:w-1/2 text-black space-y-6">
-
-                   
-                    <h3 class="text-xl font-semibold lowercase">Who am I?</h3>
-
-                   
-                    <p class="text-[16px] leading-relaxed">
-                        I'm a frontend developer with a strong passion for building responsive and user-friendly web
-                        applications. With a solid grasp of HTML, CSS, JavaScript, and modern frameworks like React, I
-                        focus on creating seamless user experiences.
-                    </p>
-                    <p class="text-[16px] leading-relaxed">
-                        Over the past year, I've worked on various freelance and personal projects, collaborating with
-                        designers and backend developers to turn ideas into functional, performant websites.
-                    </p>
-
-                    
-                    <div class="flex flex-wrap gap-20 mt-6">
-                        
-                        <div class="flex items-center space-x-3">
-                            <img src="./images/exp.svg" alt="Experience"
-                                class="w-6 h-6 transition-transform duration-300 hover:scale-110" />
-                            <div>
-                                <p class="text-sm font-medium">Experience</p>
-                                <p class="text-sm text-gray-600">1+ years</p>
-                            </div>
-                        </div>
-
-                        
-                        <div class="flex items-center space-x-3">
-                            <img src="./images/freeicon.svg" alt="Freelance"
-                                class="w-6 h-6 transition-transform duration-300 hover:scale-110" />
-                            <div>
-                                <p class="text-sm font-medium">Freelance</p>
-                                <p class="text-sm text-gray-600">Available</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-                    <div class="pt-4">
-                        <button id="chat-button"
-                            class="flex items-center space-x-2 bg-blue-600 text-white px-6 py-2 rounded border border-blue-600 hover:bg-white hover:text-blue-600 transition">
-                            <span >Let's Chat</span>
-                            <img src="./images/chaticon.svg" alt="Chat" class="w-5 h-5 filter brightness-0 invert" />
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="bg-blue-50 py-16">
-        <div  class="max-w-7xl mx-auto px-4">
-           
-            <div class="text-center mb-12 flex flex-col">
-                <h2 class="text-3xl font-bold text-black mb-2">
-                    Skills and Technologies
-                    <div class="w-28 h-1 bg-blue-600 mx-auto mt-2 "></div>
-                </h2>
-                <p class="mt-4 text-gray-600">I work with a variety of technologies to create performant and
-                    user-friendly applications.</p>
+    <!-- Contact -->
+    <section id="contact">
+      <h2 class="text-3xl font-bold text-accent mb-8 underline-animation">_contact</h2>
+      <div class="flex flex-col lg:flex-row gap-12">
+        <!-- Contact Information -->
+        <div class="lg:w-1/3">
+          <h3 class="text-xl font-bold text-text mb-6">Get in touch</h3>
+          <div class="space-y-4">
+            <div class="contact-info-item">
+              <i class="fas fa-envelope text-accent text-xl w-6"></i>
+              <div>
+                <p class="text-sm text-muted">Email me at</p>
+                <a href="mailto:cyrus.barrow@example.com" class="text-text hover:text-accent transition">cyrus.barrow07@gmail.com</a>
+              </div>
             </div>
-
-            <div class="grid md:grid-cols-2 gap-10">
-               
-                <div class="space-y-6">
-                    <div>
-                        <p class="text-black font-semibold mb-1 ">HTML5</p>
-                        <div class="w-full bg-gray-200 h-3 rounded">
-                            <div class="bg-blue-500 h-3 rounded w-[90%] transition-all duration-500"></div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <p class="text-black font-semibold mb-1">CSS3</p>
-                        <div class="w-full bg-gray-200 h-3 rounded">
-                            <div class="bg-blue-500 h-3 rounded w-[85%] transition-all duration-500"></div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <p class="text-black font-semibold mb-1">Canva</p>
-                        <div class="w-full bg-gray-200 h-3 rounded">
-                            <div class="bg-blue-500 h-3 rounded w-[80%] transition-all duration-500"></div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <p class="text-black font-semibold mb-1">Tailwind CSS</p>
-                        <div class="w-full bg-gray-200 h-3 rounded">
-                            <div class="bg-blue-500 h-3 rounded w-[75%] transition-all duration-500"></div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <p class="text-black font-semibold mb-1">Javascript</p>
-                        <div class="w-full bg-gray-200 h-3 rounded">
-                            <div class="bg-blue-500 h-3 rounded w-[70%] transition-all duration-500"></div>
-                        </div>
-                    </div>
-                </div>
-
-               
-                <div class="grid sm:grid-cols-2 gap-6">
-                    <div
-                        class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center hover:shadow-xl transition-transform transform hover:scale-105">
-                        <img src="./images/git.svg" alt="Git" class="w-12 h-12 mb-3" />
-                        <p class="text-black font-semibold">Git</p>
-                    </div>
-
-                    <div
-                        class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center hover:shadow-xl transition-transform transform hover:scale-105">
-                        <img src="./images/vscode.jpg" alt="VS Code" class="w-12 h-12 mb-3" />
-                        <p class="text-black font-semibold">VS Code</p>
-                    </div>
-
-                    <div
-                        class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center hover:shadow-xl transition-transform transform hover:scale-105">
-                        <img src="./images/react.svg" alt="React" class="w-12 h-12 mb-3 animate-spin-slow" />
-                        <p class="text-black font-semibold">React</p>
-                    </div>
-
-                    <div
-                        class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center hover:shadow-xl transition-transform transform hover:scale-105">
-                        <img src="./images/giticon.svg" alt="Github" class="w-12 h-12 mb-3 animate-spin-slow" />
-                        <p class="text-black font-semibold">GitHub</p>
-                    </div>
-                </div>
+            <div class="contact-info-item">
+              <i class="fas fa-phone text-secondary text-xl w-6"></i>
+              <div>
+                <p class="text-sm text-muted">Call me at</p>
+                <a href="tel:+1234567890" class="text-text hover:text-secondary transition">+233 541 439 049</a>
+              </div>
             </div>
+            <div class="contact-info-item">
+              <i class="fas fa-map-marker-alt text-accent text-xl w-6"></i>
+              <div>
+                <p class="text-sm text-muted">Based in</p>
+                <p class="text-text">America Town, Kasoa</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-clock text-secondary text-xl w-6"></i>
+              <div>
+                <p class="text-sm text-muted">Availability</p>
+                <p class="text-text">Mon-Fri, 9AM-5PM GMT</p>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- Contact Form -->
+        <div class="lg:w-2/3">
+          <form id="contactForm" class="space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div>
+                <label for="name" class="block text-sm text-muted mb-2">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required class="w-full bg-surface border border-slate-700 p-4 rounded-lg text-white focus:border-accent focus:outline-none transition hover:border-accent/50">
+              </div>
+              <div>
+                <label for="email" class="block text-sm text-muted mb-2">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required class="w-full bg-surface border border-slate-700 p-4 rounded-lg text-white focus:border-accent focus:outline-none transition hover:border-accent/50">
+              </div>
+            </div>
+            <div>
+              <label for="subject" class="block text-sm text-muted mb-2">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Enter the subject" required class="w-full bg-surface border border-slate-700 p-4 rounded-lg text-white focus:border-accent focus:outline-none transition hover:border-accent/50">
+            </div>
+            <div>
+              <label for="message" class="block text-sm text-muted mb-2">Message</label>
+              <textarea id="message" name="message" placeholder="Enter your message" required class="w-full bg-surface border border-slate-700 p-4 rounded-lg text-white focus:border-accent focus:outline-none transition h-40 hover:border-accent/50"></textarea>
+            </div>
+            <button type="submit" class="bg-accent text-white px-8 py-4 rounded-lg hover:bg-accent-dark transition font-medium btn-primary">
+              Send Message <i class="fas fa-paper-plane ml-2"></i>
+            </button>
+          </form>
+        </div>
+      </div>
     </section>
+  </main>
 
-   <!--Projects Section-->
-    <section id="projects" class="py-16 bg-white">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-black mb-2 relative inline-block">
-                Projects
-                <div class="w-16 h-1 bg-blue-600 mt-1 mx-auto"></div>
-            </h2>
-            <p class="mt-4 text-gray-600">
-                Some of the projects I've built using modern web technologies.
-            </p>
-        </div>
+  <!-- Footer -->
+  <footer class="footer py-8 lg:ml-72 px-6 lg:px-12">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="text-muted mb-4 md:mb-0">
+        &copy; <span id="year"></span> Cyrus Barrow. All rights reserved.
+      </div>
+      <div class="flex gap-5">
+        <a href="https://www.linkedin.com/feed/" class="text-muted hover:text-accent transition social-icon" title="LinkedIn">
+          <i class="fab fa-linkedin-in text-xl"></i>
+        </a>
+        <a href="https://github.com/King-Cyrus00" class="text-muted hover:text-accent transition social-icon" title="GitHub">
+          <i class="fab fa-github text-xl"></i>
+        </a>
+        <a href="https://x.com/home" class="text-muted hover:text-secondary transition social-icon" title="Twitter">
+          <i class="fab fa-twitter text-xl"></i>
+        </a>
+        <a href="mailto:cyrus.barrow07@gmail.com" class="text-muted hover:text-accent transition social-icon" title="Email">
+          <i class="fas fa-envelope text-xl"></i>
+        </a>
+      </div>
+    </div> 
+  </footer>
 
-
-        <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-8 px-4">
-
-            <div
-                class="bg-blue-50 rounded-lg shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-2 hover:shadow-xl">
-                <img src="./images/responsive.jpg" alt="Project 1" class="w-full h-48 object-cover">
-                <div class="p-5">
-                    <h3 class="text-xl font-bold text-black">Responsive Portfolio</h3>
-                    <p class="text-gray-600 mt-2">
-                        A modern and fully responsive portfolio website built using HTML, Tailwind CSS, and JavaScript.
-                    </p>
-                    <div class="mt-4 flex space-x-4">
-                        <a href="#" target="_blank" class="text-blue-600 hover:underline">Live Demo</a>
-                        <a href="#" target="_blank" class="text-blue-600 hover:underline">GitHub</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div
-                class="bg-blue-50 rounded-lg shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-2 hover:shadow-xl">
-                <img src="./images/ecommerce.jpg" alt="Project 2" class="w-full h-48 object-cover">
-                <div class="p-5">
-                    <h3 class="text-xl font-bold text-black">E-commerce Website</h3>
-                    <p class="text-gray-600 mt-2">
-                        A full-featured E-commerce platform built with JavaScript and Tailwind CSS.
-                    </p>
-                    <div class="mt-4 flex space-x-4">
-                        <a href="https://borrow-three.vercel.app/" target="_blank" class="text-blue-600 hover:underline">Live Demo</a>
-                        <a href="https://borrow-three.vercel.app/" target="_blank" class="text-blue-600 hover:underline">GitHub</a>
-                    </div>
-                </div>
-            </div>
-
-            <div
-                class="bg-blue-50 rounded-lg shadow-lg overflow-hidden transform transition-all duration-500 hover:-translate-y-2 hover:shadow-xl">
-                <img src="./images/task.png" alt="Project 2" class="w-full h-48 object-cover">
-                <div class="p-5">
-                    <h3 class="text-xl font-bold text-black">To-do Platform</h3>
-                    <p class="text-gray-600 mt-2">
-                        A simple to-do platform with local storage and filter features built with Html and Tailwind CSS.
-                    </p>
-                    <div class="mt-4 flex space-x-4">
-                        <a href="https://my-to-do-website.vercel.app/" target="_blank" class="text-blue-600 hover:underline">Live Demo</a>
-                        <a href="https://my-to-do-website.vercel.app/" target="_blank" class="text-blue-600 hover:underline">GitHub</a>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-blue-50">
-
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-black mb-2 relative inline-block">
-                Contact Me
-                <div class="w-16 h-1 bg-blue-600 mt-1 mx-auto"></div>
-            </h2>
-        </div>
-
-
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
-
-            <div class="bg-white p-6 rounded-lg shadow-lg animate-fade-in">
-                <h3 class="text-lg font-semibold text-black mb-6">Contact Information</h3>
-                <div class="space-y-6 text-gray-700">
-                    <div>
-                        <div class="flex items-center space-x-3 mb-1">
-                            <img src="./images/email.svg" alt="Email Icon" class="w-5 h-5">
-                            <p class="text-base font-semibold">Email</p>
-                        </div>
-                        <p class="text-base ml-8">cyrus.barrow07@gmail.com</p>
-                    </div>
-                    <div>
-                        <div class="flex items-center space-x-3 mb-1">
-                            <img src="./images/location.svg" alt="Location Icon" class="w-5 h-5">
-                            <p class="text-base font-semibold">Location</p>
-                        </div>
-                        <p class="text-base ml-8">America Town - Kasoa, Ghana</p>
-                    </div>
-                    <div>
-                        <div class="flex items-center space-x-3 mb-1">
-                            <img src="./images/callme.svg" alt="Phone Icon" class="w-5 h-5">
-                            <p class="text-base font-semibold">Phone</p>
-                        </div>
-                        <p class="text-base ml-8">+233 541 439 049</p>
-                    </div>
-                </div>
-
-
-                <div class="mt-10">
-                    <h3 class="text-lg font-semibold text-black mb-4">Follow Me</h3>
-                    <div class="flex space-x-4 text-2xl">
-                        <a href="https://x.com/home" class=" relative group text-gray-600 hover:text-blue-600 transform hover:scale-110 transition" target="_blank"><img
-                                src="./images/twitter.svg" alt="Twitter" srcset=""  class="w-6 h-6">
-
-                            <div
-                                class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 px-3 py-1 text-sm text-white bg-blue-300 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
-                               Twitter
-                            </div>
-                        </a>
-                        <a href="#" class=" relative group text-gray-600 hover:text-blue-600 transform hover:scale-110 transition"><img
-                                src="./images/ig.svg" alt="Instagram"  class="w-6 h-6">
-
-                            <div
-                                class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 px-3 py-1 text-sm text-white bg-blue-300 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
-                               Instagram
-                            </div>
-                        </a>
-                        <a href="#" class=" relative group text-gray-600 hover:text-blue-600 transform hover:scale-110 transition"><img
-                                src="./images/giticon.svg" alt="GitHub" class="w-6 h-6">
-
-                            <div
-                                class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 px-3 py-1 text-sm text-white bg-blue-300 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
-                                Github
-                            </div>
-                        </a>
-                        <a href="#" class=" relative group text-gray-600 hover:text-pink-500 transform hover:scale-110 transition"><img
-                                src="./images/linkedin.svg" alt="Linkedin"  class="w-6 h-6">
-
-                            <div
-                                class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 px-3 py-1 text-sm text-white bg-blue-300 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
-                               LinkedIn
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="bg-white p-6 rounded-lg shadow-lg animate-fade-in">
-                <h3 class="text-lg font-semibold text-black mb-4">Send Me a Message</h3>
-                <form class="space-y-4">
-                    <input type="text" placeholder="Your Name"
-                        class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                    <input type="email" placeholder="Your Email"
-                        class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                    <input type="text" placeholder="Subject"
-                        class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                    <textarea rows="4" placeholder="Message"
-                        class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-                    <button type="submit"
-                        class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition flex items-center space-x-2">
-                       <img src="./images/sendme.svg" alt="" class="w-6 h-6">
-                        <span>Send Message</span>
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8 mt-16">
-        <div
-            class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div class="text-center md:text-left">
-                <p class="text-sm">&copy; 2025 CyBar. All rights reserved.</p>
-            </div>
-            <div class="flex space-x-6 text-lg">
-                <a href="#" class="hover:text-blue-500 transition">Privacy Policy</a>
-                <a href="#" class="hover:text-blue-500 transition">Terms of Service</a>
-                <a href="#contact" class="hover:text-blue-500 transition" >Contact</a>
-            </div>
-        </div>
-    </footer>
-
-
+  <script>
+    // Toggle sidebar on mobile
+    const toggleBtn = document.getElementById('menuToggle');
+    const sidebar = document.getElementById('sidebar');
+    toggleBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('open');
+    });
+  </script>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        sidebar.classList.remove('open'); // close menu on mobile after click
+      });
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value;
+      console.log({name, email, subject, message});
+      alert('Message sent successfully! (This is a demo - in a real implementation, this would send to your email)');
+      document.getElementById('contactForm').reset();
+    });
+  </script>
 </body>
-
 </html>
