@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <meta name="author" content="Cyrus Barrow" />
+  <meta name="description" content="Cyrus Barrow's personal portfolio showcasing frontend development." />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>🌏Cyrus Barrow</title>
@@ -165,85 +167,135 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects">
-      <h2 class="text-3xl font-bold text-accent mb-8 underline-animation">_projects</h2>
-      <div class="space-y-8">
-        <div class="project-card bg-surface p-8 rounded-lg border border-slate-700">
-          <div class="flex flex-col md:flex-row gap-8">
-            <div class="md:w-1/3">
-              <div class="bg-slate-800 rounded-lg h-48 flex items-center justify-center text-slate-500">
-                <img src="./images/p1.png" alt="E-Commerce Platform" srcset="">
-              </div>
-            </div>
-            <div class="md:w-2/3">
-              <h3 class="text-2xl text-accent font-bold mb-3">E-Commerce Platform</h3>
-              <p class="text-muted mb-4">
-                A full-featured online store with product catalog, search functionality, and secure login or
-                registration. Built with React.js, JavaScript, and Tailwind CSSs.
-              </p>
-              <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1 bg-slate-800 text-accent rounded-full text-xs tag">React.js</span>
-                <span class="px-3 py-1 bg-slate-800 text-accent rounded-full text-xs tag">JavaScript</span>
-                <span class="px-3 py-1 bg-slate-800 text-accent rounded-full text-xs tag">Tailwind CSS</span>
-              </div>
-              <div class="mt-4">
-                <a href="https://bambi-online.netlify.app/" target="blank"
-                  class="text-accent hover:text-accent-dark transition underline-animation">View Project →</a>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section id="projects" class="py-20 bg-gradient-to-b from-surface to-slate-900">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-accent mb-8 underline-animation">
+          _projects
+        </h2>
 
-        <div class="project-card bg-surface p-8 rounded-lg border border-slate-700">
-          <div class="flex flex-col md:flex-row gap-8">
-            <div class="md:w-1/3">
-              <div class="bg-slate-800 rounded-lg h-48 flex items-center justify-center text-slate-500">
-                <img src="./images/Screenshot 2025-07-01 121626.png" alt="Book Library App" srcset="">
-              </div>
-            </div>
-            <div class="md:w-2/3">
-              <h3 class="text-2xl text-accent font-bold mb-3">Book Library App</h3>
-              <p class="text-muted mb-4">
-                A responsive web application for browsing, adding, and managing books. Users can view book details,
-                search titles, and organize their collection. Built using React,JavaScript and styled with Tailwind CSS.
-              </p>
-              <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1 bg-slate-800 text-accent rounded-full text-xs tag">React</span>
-                <span class="px-3 py-1 bg-slate-800 text-accent rounded-full text-xs tag">JavaScript</span>
-                <span class="px-3 py-1 bg-slate-800 text-accent rounded-full text-xs tag">Tailwind CSS</span>
-              </div>
-              <div class="mt-4">
-                <a href="https://deluxe-hummingbird-3b37f3.netlify.app/" target="blank"
-                  class="text-accent hover:text-accent-dark transition underline-animation">View Project →</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
 
-        <div class="project-card bg-surface p-8 rounded-lg border border-slate-700">
-          <div class="flex flex-col md:flex-row gap-8">
-            <div class="md:w-1/3">
-              <div class="bg-slate-800 rounded-lg h-48 flex items-center justify-center text-slate-500">
-                <img src="./images/to-do.png" alt="To-Do List App" sizes="" srcset="">
-              </div>
-            </div>
-            <div class="md:w-2/3">
-              <h3 class="text-2xl text-accent font-bold mb-3">To-Do List App</h3>
-              <p class="text-muted mb-4">
-                A responsive web application for managing tasks and to-do lists. Users can add, edit, and delete tasks,
-                as well as mark them as complete. Built using HTML5, JavaScript, and styled with Tailwind CSS.
+          <!-- Sheady Enterprise -->
+          <div
+            class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-500"
+            data-aos="fade-up" data-aos-delay="100">
+            <img src="./images/sheady.png" alt="Sheady Enterprise"
+              class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+            <div
+              class="absolute inset-0 bg-black/70 group-hover:bg-black/85 opacity-0 group-hover:opacity-100 transition duration-500 p-6 flex flex-col justify-end">
+              <h3 class="text-2xl font-bold text-white mb-3">Sheady Enterprise</h3>
+              <p class="text-gray-200 text-sm leading-relaxed mb-4">
+                Premium shea butter e-commerce platform with cart, checkout, and responsive UI.
               </p>
-              <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1 bg-slate-800 text-accent rounded-full text-xs tag">HTML5</span>
-                <span class="px-3 py-1 bg-slate-800 text-accent rounded-full text-xs tag">JavaScript</span>
-                <span class="px-3 py-1 bg-slate-800 text-accent rounded-full text-xs tag">Tailwind CSS</span>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-xs">React</span>
+                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-xs">Tailwind CSS</span>
+                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-xs">JavaScript</span>
               </div>
-              <div class="mt-4">
-                <a href="http://127.0.0.1:5500/index.html" target="blank"
-                  class="text-accent hover:text-accent-dark transition underline-animation">View Project →</a>
-              </div>
+              <a href="https://sheady.netlify.app/" target="_blank"
+                class="inline-block bg-accent hover:bg-accent-dark text-white text-sm font-semibold py-2 px-4 rounded-lg transition">
+                View Project →
+              </a>
             </div>
           </div>
+
+          <!-- Bambi Watch -->
+          <div
+            class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-500"
+            data-aos="fade-up" data-aos-delay="200">
+            <img src="./images/bambi-watch.png" alt="Bambi Watch"
+              class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+            <div
+              class="absolute inset-0 bg-black/70 group-hover:bg-black/85 opacity-0 group-hover:opacity-100 transition duration-500 p-6 flex flex-col justify-end">
+              <h3 class="text-2xl font-bold text-white mb-3">Bambi Watch</h3>
+              <p class="text-gray-200 text-sm leading-relaxed mb-4">
+                Watch YouTube videos in sync with friends worldwide and chat in real time.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-xs">React.js</span>
+                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-xs">JavaScript</span>
+                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-xs">Tailwind CSS</span>
+                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-xs">API</span>
+              </div>
+              <a href="https://bambi-watch.netlify.app/" target="_blank"
+                class="inline-block bg-accent hover:bg-accent-dark text-white text-sm font-semibold py-2 px-4 rounded-lg transition">
+                View Project →
+              </a>
+            </div>
+          </div>
+
+          <!-- E-Commerce Platform -->
+          <div
+            class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-500"
+            data-aos="fade-up" data-aos-delay="300">
+            <img src="./images/p1.png" alt="E-Commerce Platform"
+              class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+            <div
+              class="absolute inset-0 bg-black/70 group-hover:bg-black/85 opacity-0 group-hover:opacity-100 transition duration-500 p-6 flex flex-col justify-end">
+              <h3 class="text-2xl font-bold text-white mb-3">E-Commerce Platform</h3>
+              <p class="text-gray-200 text-sm leading-relaxed mb-4">
+                Full-featured online store with catalog, search, and secure authentication.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-xs">React.js</span>
+                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-xs">JavaScript</span>
+                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-xs">Tailwind CSS</span>
+              </div>
+              <a href="https://bambi-online.netlify.app/" target="_blank"
+                class="inline-block bg-accent hover:bg-accent-dark text-white text-sm font-semibold py-2 px-4 rounded-lg transition">
+                View Project →
+              </a>
+            </div>
+          </div>
+
+          <!-- Book Library App -->
+          <div
+            class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-500"
+            data-aos="fade-up" data-aos-delay="400">
+            <img src="./images/Screenshot 2025-07-01 121626.png" alt="Book Library App"
+              class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+            <div
+              class="absolute inset-0 bg-black/70 group-hover:bg-black/85 opacity-0 group-hover:opacity-100 transition duration-500 p-6 flex flex-col justify-end">
+              <h3 class="text-2xl font-bold text-white mb-3">Book Library App</h3>
+              <p class="text-gray-200 text-sm leading-relaxed mb-4">
+                Browse, add, and manage books with responsive design and smooth navigation.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-xs">React</span>
+                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-xs">JavaScript</span>
+                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-xs">Tailwind CSS</span>
+              </div>
+              <a href="https://deluxe-hummingbird-3b37f3.netlify.app/" target="_blank"
+                class="inline-block bg-accent hover:bg-accent-dark text-white text-sm font-semibold py-2 px-4 rounded-lg transition">
+                View Project →
+              </a>
+            </div>
+          </div>
+
+          <!-- To-Do List App -->
+          <div
+            class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-500"
+            data-aos="fade-up" data-aos-delay="500">
+            <img src="./images/to-do.png" alt="To-Do List App"
+              class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+            <div
+              class="absolute inset-0 bg-black/70 group-hover:bg-black/85 opacity-0 group-hover:opacity-100 transition duration-500 p-6 flex flex-col justify-end">
+              <h3 class="text-2xl font-bold text-white mb-3">To-Do List App</h3>
+              <p class="text-gray-200 text-sm leading-relaxed mb-4">
+                Manage daily tasks with add, edit, delete, and mark-complete features.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-xs">HTML5</span>
+                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-xs">JavaScript</span>
+                <span class="px-3 py-1 bg-accent/20 text-accent rounded-full text-xs">Tailwind CSS</span>
+              </div>
+              <a href="http://127.0.0.1:5500/index.html" target="_blank"
+                class="inline-block bg-accent hover:bg-accent-dark text-white text-sm font-semibold py-2 px-4 rounded-lg transition">
+                View Project →
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -366,34 +418,34 @@
       });
     });
     document.getElementById('year').textContent = new Date().getFullYear();
-   
-      document.getElementById('contactForm').addEventListener('submit', function (e) {
-  e.preventDefault();
 
-  const form = e.target;
-  const formData = new FormData(form);
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
 
-  fetch('https://formspree.io/f/xyzjooob', {
-    method: 'POST',
-    headers: { 'Accept': 'application/json' },
-    body: formData
-  })
-    .then(response => {
-      if (response.ok) {
-        alert('✅ Message sent successfully!');
-        form.reset();
-      } else {
-        response.json().then(data => {
-          alert(data.error || '❌ Something went wrong. Please try again.');
+      const form = e.target;
+      const formData = new FormData(form);
+
+      fetch('https://formspree.io/f/xyzjooob', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: formData
+      })
+        .then(response => {
+          if (response.ok) {
+            alert('✅ Message sent successfully!');
+            form.reset();
+          } else {
+            response.json().then(data => {
+              alert(data.error || '❌ Something went wrong. Please try again.');
+            });
+          }
+        })
+        .catch(error => {
+          console.error('Form error:', error);
+          alert('❌ There was an error sending your message.');
         });
-      }
-    })
-    .catch(error => {
-      console.error('Form error:', error);
-      alert('❌ There was an error sending your message.');
     });
-});
-  
+
   </script>
 </body>
 
